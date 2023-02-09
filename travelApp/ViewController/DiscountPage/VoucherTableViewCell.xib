@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="400" id="qYE-Fd-QVr" customClass="VoucherTableViewCell" customModule="travelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qYE-Fd-QVr" id="TFj-2h-a03">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unk-3R-1n1">
+                        <rect key="frame" x="0.0" y="200" width="414" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="pQk-Ye-3pl">
+                                <rect key="frame" x="10" y="10" width="394" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid until 02 Maret 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNB-Qa-1eC">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXI-EA-5BF">
+                                        <rect key="frame" x="314" y="0.0" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="hX1-d1-yui"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="USE" cornerStyle="capsule"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WXI-EA-5BF" firstAttribute="leading" secondItem="LNB-Qa-1eC" secondAttribute="trailing" constant="2" id="Zz3-3X-aKs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CnP-Aj-VzK"/>
+                            <constraint firstAttribute="trailing" secondItem="pQk-Ye-3pl" secondAttribute="trailing" constant="10" id="R1h-xj-8IK"/>
+                            <constraint firstItem="pQk-Ye-3pl" firstAttribute="leading" secondItem="unk-3R-1n1" secondAttribute="leading" constant="10" id="X7e-my-OTX"/>
+                            <constraint firstItem="pQk-Ye-3pl" firstAttribute="top" secondItem="unk-3R-1n1" secondAttribute="top" constant="10" id="bhS-wg-phd"/>
+                            <constraint firstAttribute="bottom" secondItem="pQk-Ye-3pl" secondAttribute="bottom" constant="10" id="yHr-5Y-oSt"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1rj-2w-kXL">
+                        <rect key="frame" x="20" y="20" width="130" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="89v-df-KFD"/>
+                            <constraint firstAttribute="width" constant="130" id="Xro-Sd-p08"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qUX-k9-whq">
+                        <rect key="frame" x="160" y="20.000000000000004" width="234" height="48.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alleira Batik E-voucher" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-XB-50Q">
+                                <rect key="frame" x="0.0" y="0.0" width="234" height="21.666666666666668"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 250.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZf-33-x1j">
+                                <rect key="frame" x="0.0" y="26.666666666666664" width="234" height="21.666666666666664"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qUX-k9-whq" secondAttribute="trailing" constant="20" id="53g-1U-E0H"/>
+                    <constraint firstItem="1rj-2w-kXL" firstAttribute="top" secondItem="TFj-2h-a03" secondAttribute="top" constant="20" id="8gb-k7-vUq"/>
+                    <constraint firstItem="qUX-k9-whq" firstAttribute="leading" secondItem="1rj-2w-kXL" secondAttribute="trailing" constant="10" id="GEh-Ls-y1l"/>
+                    <constraint firstItem="unk-3R-1n1" firstAttribute="leading" secondItem="TFj-2h-a03" secondAttribute="leading" id="dNp-Wl-y4k"/>
+                    <constraint firstAttribute="bottom" secondItem="unk-3R-1n1" secondAttribute="bottom" id="gtk-JB-ueq"/>
+                    <constraint firstItem="qUX-k9-whq" firstAttribute="top" secondItem="TFj-2h-a03" secondAttribute="top" constant="20" id="kGz-Pr-1M1"/>
+                    <constraint firstItem="1rj-2w-kXL" firstAttribute="leading" secondItem="TFj-2h-a03" secondAttribute="leading" constant="20" id="mW1-Cm-sYq"/>
+                    <constraint firstAttribute="trailing" secondItem="unk-3R-1n1" secondAttribute="trailing" id="n36-Ua-UN6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgVoucher" destination="1rj-2w-kXL" id="Gcc-pn-IZT"/>
+                <outlet property="lblDate" destination="LNB-Qa-1eC" id="7EW-MF-3Tb"/>
+                <outlet property="lblTitle" destination="wFq-XB-50Q" id="dvQ-Ov-HN3"/>
+                <outlet property="lblVoucher" destination="XZf-33-x1j" id="RgZ-to-tSA"/>
+            </connections>
+            <point key="canvasLocation" x="-195.41984732824426" y="-98.591549295774655"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

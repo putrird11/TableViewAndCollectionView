@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePage" customModule="travelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="lKM-tM-cGx" id="CB9-Hf-HYr"/>
+                <outlet property="collectionView" destination="2wy-ex-FVa" id="MIS-kT-2hc"/>
+                <outlet property="lbl" destination="Isx-20-lhQ" id="fEs-67-qJR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GetPlus Indonesia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37s-8R-1fb">
+                    <rect key="frame" x="20" y="57" width="350" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isx-20-lhQ">
+                    <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-ex-FVa">
+                    <rect key="frame" x="0.0" y="97" width="390" height="747"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="17R-b3-dSa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lKM-tM-cGx">
+                    <rect key="frame" x="185" y="382" width="20" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Lpj-U3-go3"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Isx-20-lhQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2a3-wt-M1x"/>
+                <constraint firstItem="2wy-ex-FVa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4OU-gZ-MI3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="37s-8R-1fb" secondAttribute="trailing" constant="20" id="6hz-pT-egr"/>
+                <constraint firstItem="lKM-tM-cGx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9zX-dv-zrn"/>
+                <constraint firstItem="37s-8R-1fb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CXA-7l-0ah"/>
+                <constraint firstItem="lKM-tM-cGx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DOa-fL-3as"/>
+                <constraint firstAttribute="bottom" secondItem="2wy-ex-FVa" secondAttribute="bottom" id="TBp-Yw-khB"/>
+                <constraint firstItem="2wy-ex-FVa" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="cgG-cA-2h5"/>
+                <constraint firstItem="2wy-ex-FVa" firstAttribute="top" secondItem="37s-8R-1fb" secondAttribute="bottom" constant="10" id="r8A-f9-JCi"/>
+                <constraint firstItem="37s-8R-1fb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="rJS-Z7-z78"/>
+                <constraint firstItem="Isx-20-lhQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ser-jz-q4a"/>
+            </constraints>
+            <point key="canvasLocation" x="49.230769230769226" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
